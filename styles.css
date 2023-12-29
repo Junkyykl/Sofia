@@ -13,16 +13,16 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: #333; /* Text color */
+    color: #333;
 }
 
 h1 {
-    color: #c70039; /* Red for Christmas */
+    color: #c70039;
 }
 
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #228B22; /* Green for Christmas */
-    color: #fff; /* Text color */
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* White text color */
 }
