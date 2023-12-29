@@ -5,28 +5,24 @@ body {
     background-color: #f8f8f8;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-}
-
-section {
+main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333; /* Text color */
+}
+
+h1 {
+    color: #c70039; /* Red for Christmas */
 }
 
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #228B22; /* Green for Christmas */
+    color: #fff; /* Text color */
 }
