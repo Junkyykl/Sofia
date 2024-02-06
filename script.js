@@ -1,7 +1,7 @@
 function moveNoButton() {
     const noButton = document.getElementById('noButton');
     const container = document.querySelector('.container');
-    
+
     // Calculate new random position
     const newX = Math.random() * (container.offsetWidth - noButton.offsetWidth);
     const newY = Math.random() * (container.offsetHeight - noButton.offsetHeight);
@@ -15,3 +15,11 @@ function moveNoButton() {
         noButton.style.transition = 'none';
     }, { once: true });
 }
+
+function showMessage(message) {
+    const container = document.querySelector('.container');
+    container.innerHTML = `<h1>${message}</h1>`;
+}
+
+const yesButton = document.getElementById('yesButton');
+yesButton.addEventListe
