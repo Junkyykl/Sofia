@@ -1,2 +1,2 @@
-# Sofia_the_cutest_and_hotest_girl
+# Sofia
 site for the cuttest girl
