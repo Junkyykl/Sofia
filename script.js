@@ -22,4 +22,6 @@ function showMessage(message) {
 }
 
 const yesButton = document.getElementById('yesButton');
-yesButton.addEventListe
+yesButton.addEventListener('click', function() {
+    showMessage("Ok babe, we are going!");
+});
