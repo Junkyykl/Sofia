@@ -18,7 +18,6 @@ h1 {
 button {
     font-size: 18px;
     margin: 10px;
-    padding: 15px 30px; /* Adjust the padding to increase the button size */
     cursor: pointer;
 }
 
@@ -26,6 +25,7 @@ button {
     background-color: green;
     color: white;
     border: none;
+    padding: 15px 30px; /* Adjust the padding to increase the button size */
 }
 
 #noButton {
@@ -41,9 +41,4 @@ button {
 
 @keyframes moveButton {
     0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(10px);
-    }
-}
+     
