@@ -9,14 +9,4 @@ function moveNoButton() {
     // Move the button smoothly using CSS transitions
     noButton.style.transition = 'transform 0.5s linear';
     noButton.style.transform = `translate(${newX}px, ${newY}px)`;
-
-    // Reset the button's transition property after the animation completes
-    setTimeout(() => {
-        noButton.style.transition = 'none';
-    }, 500);
-}
-
-function showMessage(message) {
-    const container = document.querySelector('.container');
-    container.innerHTML = `<h1>${message}</h1>`;
 }
