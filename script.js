@@ -9,4 +9,9 @@ function moveNoButton() {
     // Move the button smoothly using CSS transitions
     noButton.style.transition = 'transform 0.5s linear';
     noButton.style.transform = `translate(${newX}px, ${newY}px)`;
+
+    // Remove transition property after the animation completes
+    noButton.addEventListener('transitionend', function() {
+        noButton.style.transition = 'none';
+    }, { once: true });
 }
