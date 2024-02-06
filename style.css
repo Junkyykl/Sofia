@@ -4,7 +4,6 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f6f6f6; /* Adding a light background color */
 }
 
 .container {
@@ -19,46 +18,36 @@ h1 {
 button {
     font-size: 18px;
     margin: 10px;
-    padding: 15px 30px;
     cursor: pointer;
-    background-color: #4CAF50; /* Green */
-    border: none;
+}
+
+#yesButton {
+    background-color: green;
     color: white;
+    border: none;
+    padding: 15px 30px; /* Adjust the padding to increase the button size */
 }
 
-.decorations {
+#noButton {
+    background-color: red;
+    color: white;
+    border: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* Prevent decorations from interfering with button clicks */
 }
 
+#noButton.moving {
+    animation: moveButton 0.5s infinite alternate;
+}
+
+#decorations {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heart,
 .flower {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 100px;
-    height: 100px;
-    background-color: #FFD700; /* Gold */
-    border-radius: 50%;
-    transform: rotate(45deg);
-}
-
-.heart {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-    width: 100px;
-    height: 100px;
-    background-color: #FF69B4; /* Hot Pink */
-    border-radius: 50%;
-    transform: rotate(45deg);
-    clip-path: polygon(
-        50% 0%,
-        100% 50%,
-        50% 100%,
-        0% 50%
-    );
+    width: 30px; /* Adjust the size of the images */
+    margin: 0 5px; /* Adjust the margin between images */
 }

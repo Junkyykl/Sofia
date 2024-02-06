@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="decorations">
-            <div class="flower"></div>
-            <div class="heart"></div>
-        </div>
         <h1>Will you be my Valentine?</h1>
-        <button id="yesButton">Yes</button>
-        <button id="noButton">No</button>
+        <button id="yesButton" onclick="showMessage('Ok babe, we are going!')">Yes</button>
+        <button id="noButton" onclick="moveNoButton()">No</button>
+        <div id="decorations">
+            <img class="heart" src="heart.png" alt="Heart">
+            <img class="flower" src="flower.png" alt="Flower">
+        </div>
     </div>
 
     <script src="script.js"></script>
