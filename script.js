@@ -7,13 +7,12 @@ function moveNoButton() {
     const newY = Math.random() * (container.offsetHeight - noButton.offsetHeight);
 
     // Move the button smoothly using CSS transitions
-    noButton.style.transition = 'transform 0.5s ease-in-out';
+    noButton.style.transition = 'transform 0.5s linear';
     noButton.style.transform = `translate(${newX}px, ${newY}px)`;
 
-    // Reset the button's position after the animation completes
+    // Reset the button's transition property after the animation completes
     setTimeout(() => {
         noButton.style.transition = 'none';
-        noButton.style.transform = 'translate(0, 0)';
     }, 500);
 }
 
