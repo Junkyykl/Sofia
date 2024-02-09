@@ -39,15 +39,11 @@ button {
     animation: moveButton 0.5s infinite alternate;
 }
 
-#decorations {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.heart,
-.flower {
-    width: 30px; /* Adjust the size of the images */
-    margin: 0 5px; /* Adjust the margin between images */
+@keyframes moveButton {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+    }
 }
