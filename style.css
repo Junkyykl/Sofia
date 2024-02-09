@@ -4,6 +4,10 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-image: url('red-hearts.png'); /* Update the path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container {
