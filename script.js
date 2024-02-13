@@ -19,9 +19,16 @@ function moveNoButton() {
 function showMessage(message) {
     const container = document.querySelector('.container');
     container.innerHTML = `<h1>${message}</h1>`;
+
+    if (message === "Φύγαμε ζουζουνάκιιιιι !!!") {
+        // If the message is for going out, display a GIF
+        const gifContainer = document.createElement('div');
+        gifContainer.innerHTML = '<img src="bubu-dudu-kiss.gif" alt="Celebration GIF" />';
+        container.appendChild(gifContainer);
+    }
 }
 
 const yesButton = document.getElementById('yesButton');
-yesButton.addEventListener('click', function() {
-    showMessage("Ok babe, we are going!");
+yesButton.addEventListener('click', function () {
+    showMessage("Φύγαμε ζουζουνάκιιιιι !!!");
 });
