@@ -79,5 +79,19 @@ footer {
     bottom: 0;
     left: 0;
     padding: 15px;
-    
+    background-color: #2c3e50; /* Dark Blue-Grey */
+    color: #ecf0f1; /* Light Grey */
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+footer a {
+    color: #4eb1f3; /* Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #2980b9; /* Darker Blue on hover */
 }
